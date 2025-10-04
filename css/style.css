@@ -1,0 +1,258 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background-color: #fff;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ecf0f1;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 8rem 5% 4rem;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.skills-list {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.skills-list li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.experience-item {
+    margin: 1.5rem 0;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 8rem 5% 4rem;
+    background: #f8f9fa;
+}
+
+.contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #3498db;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #2980b9;
+}
+
+.contact-info {
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-item {
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #2980b9;
+}
+
+/* Common Elements */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: white;
+    color: #3498db;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #2c3e50;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-links li {
+        margin-left: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
